@@ -85,6 +85,7 @@ class Main:
 			return list((c[a], c[b]))
 		else:
 			rv = []
+			data = tuple(sorted(data))
 			value = self.index[data]
 			for x in zip(list(data), value):
 				a = self.angka[x[0] - 1]
